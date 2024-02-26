@@ -4,8 +4,6 @@ Terraform module which creates **AWS CloudFront, S3, Route53 records, ACM** reso
 
 ## Usage
 
-### CloudFront distribution with versioning enabled
-
 ```hcl
 module "my-awful-web-application" {
   source = "tal-rofe/static-cdn-web-app"
