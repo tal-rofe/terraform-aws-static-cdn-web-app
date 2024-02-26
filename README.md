@@ -6,7 +6,8 @@ Terraform module which creates **AWS CloudFront, S3, Route53 records, ACM** reso
 
 ```hcl
 module "my-awful-web-application" {
-  source = "tal-rofe/static-cdn-web-app"
+  source  = "tal-rofe/static-cdn-web-app/aws"
+  version = "1.0.0"
 
   domain_name         = "awful.com"
   zone_id             = aws_route53_zone.primary.zone_id
