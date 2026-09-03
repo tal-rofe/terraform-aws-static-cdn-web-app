@@ -6,7 +6,7 @@ provider "aws" {
 
 module "acm_cloudfront" {
   source  = "terraform-aws-modules/acm/aws"
-  version = "5.0.0"
+  version = "6.3.1"
 
   providers = {
     aws = aws.cloudfront_certificates_region
